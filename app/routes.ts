@@ -1,18 +1,19 @@
-import { type RouteConfig, index } from "@react-router/dev/routes";
+import {
+  type RouteConfig,
+  index,
+  route,
+  layout,
+  prefix,
+} from "@react-router/dev/routes";
+import Home from './routes/home'; // Asegúrate de que los archivos tengan mayúsculas y minúsculas correctas
+import Noticias from './routes/noticias';
+import About from './routes/about';
 
 export default [
-    
-    
-  /*  
-  Tocar rutas para luego hacerlo bien
-  quitar layout y meter entre corchetes las rutas
-  index("routes/home.tsx")
-    layout("routes/anidados/Info.tsx", [
-        index("routes/anidados/home.tsx"),
-        route("barra", "routes/anidados/Dashboard.tsx", [
-          route("nieta", "routes/anidados/Nieta.tsx"),
-        ]),
-        route("cuartos", "routes/anidados/Finanzas.tsx"),
-      ]),
-    */
+
+  index("routes/home.tsx"),
+  route("noticias", "routes/noticias.tsx"), 
+  route("nieta", "routes/about.tsx"),
+  
 ] satisfies RouteConfig;
+

@@ -1,9 +1,12 @@
-function Header() {
+import Navbar from "./Navbar";
+import Logo from "../../../../public/v2logo.png";
+const Header: React.FC = () => {
   return (
-    <div>
-      
-    </div>
-  )
-}
-// se compondra de una imagen , un titulo y un navbar que sus elementos seran navitems por temas de anidacion
-export default Header
+    <header className="bg-gray-900 p-4 flex items-center justify-between">
+      <div className="text-white text-xl font-bold w-36"><img src={Logo} alt="LogoCryptobrosV2" /></div>
+      <Navbar />
+    </header>
+  );
+};
+
+export default Header;
