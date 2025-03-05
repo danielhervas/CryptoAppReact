@@ -5,6 +5,7 @@ export default [
     
   /*  
   Tocar rutas para luego hacerlo bien
+  quitar layout y meter entre corchetes las rutas
   index("routes/home.tsx")
     layout("routes/anidados/Info.tsx", [
         index("routes/anidados/home.tsx"),
