@@ -12,7 +12,7 @@ const Navbar: React.FC = () => {
       <ul className="flex space-x-4">
         <NavItem name="Home" href="/" />
         <NavItem name="Noticias" href="/noticias" />
-        <NavItem name="Contacto" href="/contacto" />
+        <NavItem name="Contacto" href="/about" />
       </ul>
     </nav>
   );
