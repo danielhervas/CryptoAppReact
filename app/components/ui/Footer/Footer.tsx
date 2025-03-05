@@ -5,5 +5,5 @@ function Footer() {
     </div>
   )
 }
-
+// cosas del copy y alguna foto rollo empresarial
 export default Footer
