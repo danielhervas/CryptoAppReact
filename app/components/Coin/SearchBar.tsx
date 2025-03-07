@@ -13,7 +13,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, style }) => {
 
   return (
     <>
-      <h3 className="text-2xl font-bold text-center mb-2 pt-2 text-gray-300">Busca tu Crypto</h3>
+      <h3 className="text-2xl font-bold text-center mb-2 pt-5 text-gray-300">Busca tu Crypto</h3>
       <div className="flex justify-center">
         <div className="relative w-full max-w-md mb-2">
           <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
