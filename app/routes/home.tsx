@@ -11,7 +11,6 @@ export default function Home() {
   const [loading, setLoading] = useState(true);
   const [searchQuery, setSearchQuery] = useState<string>('');
 
-
   const fetchData = async () => {
     try {
       const response = await axios.get(
@@ -35,11 +34,9 @@ export default function Home() {
     }
   };
 
-
   useEffect(() => {
     fetchData();
   }, []);
-
 
   const handleSearch = (query: string) => {
     setSearchQuery(query);
@@ -64,26 +61,13 @@ export default function Home() {
           onSearch={handleSearch}
           style={{ marginTop: '60px', marginBottom: '60px', marginLeft: '20px' }}
         />
-        {/*
-      <div
-        style={{
-          display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
-          gap: '1rem',
-        }}
-      >
-        {cryptoData.map((coin) => (
-          <CoinCard key={coin.id} coin={coin} />
-        ))}
-      </div>
-      */}
         <div className="flex flex-col gap-4 mt-2">
           {cryptoData.map((coin) => (
             <CoinCard key={coin.id} coin={coin} />
           ))}
         </div>
-
       </div>
+      <Footer />
     </>
   );
 }

@@ -15,7 +15,7 @@ const BinanceButton: React.FC<BinanceButtonProps> = ({ symbol }) => {
       rel="noopener noreferrer"
       className="inline-block px-6 py-2 bg-green-500 text-white font-semibold rounded-full hover:bg-white hover:border-green-500 hover:border-2 hover:text-black transition duration-200"
     >
-      Mas Info
+      Más Info
     </a>
   );
 };
