@@ -13,7 +13,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, style }) => {
 
   return (
     <>
-      <h3 className="text-2xl font-bold text-center mb-2 pt-2">Busca tu Crypto</h3>
+      <h3 className="text-2xl font-bold text-center mb-2 pt-2 text-gray-300">Busca tu Crypto</h3>
       <div className="flex justify-center">
         <div className="relative w-full max-w-md mb-2">
           <div className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -23,7 +23,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch, style }) => {
             type="text"
             placeholder="Buscar..."
             onChange={handleChange}
-            className="bg-white w-full pl-10 pr-4 py-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            className="bg-white w-full pl-10 pr-4 py-1 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-transparent"
           />
         </div>
       </div>
