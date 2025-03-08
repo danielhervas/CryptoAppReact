@@ -6,11 +6,9 @@ import ContactPage from "app/components/contact/contactpage";
 const Contacto = () => {
   return (
     <>
-      <Header />
       <div className="container mx-auto p-4">
         <ContactPage />
       </div>
-      <Footer />
     </>
   );
 };

@@ -55,7 +55,6 @@ export default function Home() {
 
   return (
     <>
-      <Header />
       <div>
         <SearchBar
           onSearch={handleSearch}
@@ -67,7 +66,6 @@ export default function Home() {
           ))}
         </div>
       </div>
-      <Footer />
     </>
   );
 }
