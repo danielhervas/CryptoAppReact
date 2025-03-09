@@ -3,6 +3,7 @@ import Footer from "app/components/ui/Footer/Footer";
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import CoinCard from '../components/Coin/CoinCard';
+import NoResults from '../components/Coin/NoResults';
 import type { Coin as CoinType } from "../types";
 import SearchBar from '~/components/Coin/SearchBar';
 
@@ -61,9 +62,13 @@ export default function Home() {
           style={{ marginTop: '60px', marginBottom: '60px', marginLeft: '20px' }}
         />
         <div className="flex flex-col gap-4 mt-2">
-          {cryptoData.map((coin) => (
-            <CoinCard key={coin.id} coin={coin} />
-          ))}
+          {cryptoData.length > 0 ? (
+            cryptoData.map((coin) => (
+              <CoinCard key={coin.id} coin={coin} />
+            ))
+          ) : (
+            <NoResults />
+          )}
         </div>
       </div>
     </>
