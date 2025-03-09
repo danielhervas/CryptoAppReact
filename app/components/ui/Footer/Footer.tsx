@@ -5,7 +5,7 @@ import InfoItem from './InfoItem';
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-white pt-4 pb-4">
+    <footer className="bg-gray-900 text-white pt-4 pb-4 mt-5">
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center">
         {/* Redes sociales */}
 
