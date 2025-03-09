@@ -14,8 +14,40 @@ CryptoBrosV2 es una aplicación web desarrollada con React y Tailwind CSS que pe
 ## Estructura del Proyecto
 
 La estructura del proyecto está organizada de la siguiente manera:
-├── src/ │ ├── components/ │ │ ├── Coin/ │ │ │ ├── CoinCard.tsx │ │ │ ├── InfoButton.tsx │ │ │ ├── NoResults.tsx │ │ │ ├── SearchBar.tsx │ │ ├── contact/ │ │ │ ├── contactform.tsx │ │ │ ├── contactinfo.tsx │ │ │ ├── contactpage.tsx │ │ │ ├── formfield.tsx │ │ │ ├── formfields.tsx │ │ ├── ui/ │ │ │ ├── Footer/ │ │ │ │ ├── Footer.tsx │ │ │ │ ├── InfoItem.tsx │ │ │ ├── Header/ │ │ │ │ ├── Header.tsx │ │ │ │ ├── NavItem.tsx │ │ │ │ ├── Navbar.tsx │ │ │ ├── Pagination/ │ │ │ │ ├── Pagination.tsx │ ├── routes/ │ │ ├── about.tsx │ │ ├── home.tsx │ │ ├── noticias.tsx │ ├── types/ │ │ ├── Coin.ts │ ├── root.tsx │ ├── app.css │ ├── index.tsx
 
+```markdown
+├── src/
+│   ├── components/
+│   │   ├── Coin/
+│   │   │   ├── CoinCard.tsx
+│   │   │   ├── InfoButton.tsx
+│   │   │   ├── NoResults.tsx
+│   │   │   ├── SearchBar.tsx
+│   │   ├── contact/
+│   │   │   ├── contactform.tsx
+│   │   │   ├── contactinfo.tsx
+│   │   │   ├── contactpage.tsx
+│   │   │   ├── formfield.tsx
+│   │   │   ├── formfields.tsx
+│   │   ├── ui/
+│   │   │   ├── Footer/
+│   │   │   │   ├── Footer.tsx
+│   │   │   │   ├── InfoItem.tsx
+│   │   │   ├── Header/
+│   │   │   │   ├── Header.tsx
+│   │   │   │   ├── NavItem.tsx
+│   │   │   │   ├── Navbar.tsx
+│   │   │   ├── Pagination/
+│   │   │   │   ├── Pagination.tsx
+│   ├── routes/
+│   │   ├── about.tsx
+│   │   ├── home.tsx
+│   │   ├── noticias.tsx
+│   ├── types/
+│   │   ├── Coin.ts
+│   ├── root.tsx
+│   ├── app.css
+│   ├── index.tsx
 
 ## Niveles de Anidamiento
 
@@ -50,4 +82,4 @@ La aplicación utiliza Tailwind CSS para el diseño y la estilización, proporci
 
 ---
 
-Built with ❤️ using React Router.
+Hecho co ❤️ por el equipo A.
