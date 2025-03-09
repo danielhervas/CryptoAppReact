@@ -1,99 +1,52 @@
-# Welcome to React Router!
+# CryptoBrosV2
 
-A modern, production-ready template for building full-stack React applications using React Router.
+CryptoBrosV2 es una aplicación web desarrollada con React y Tailwind CSS que permite a los usuarios buscar y visualizar información sobre diversas criptomonedas. La aplicación utiliza la API de CoinDesk para obtener datos actualizados sobre las criptomonedas.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+## Funcionalidades
 
-## Features
+- **Búsqueda de Criptomonedas**: Los usuarios pueden buscar criptomonedas por nombre o símbolo utilizando la barra de búsqueda.
+- **Paginación**: La aplicación muestra las criptomonedas en páginas de 5 elementos cada una, permitiendo a los usuarios navegar entre las páginas.
+- **Información Detallada**: Cada tarjeta de criptomoneda muestra el nombre, símbolo, precio actual, cambio porcentual en 24 horas y el rango en la toplist.
+- **Más Información**: Cada tarjeta incluye un botón que redirige a la página de Binance para obtener más información sobre la criptomoneda seleccionada.
+- **Formulario de Contacto**: Los usuarios pueden rellenar un formulario de contacto para enviar consultas.
+- **Información de Contacto**: La página de contacto incluye información de contacto y un mapa de ubicación.
 
-- 🚀 Server-side rendering
-- ⚡️ Hot Module Replacement (HMR)
-- 📦 Asset bundling and optimization
-- 🔄 Data loading and mutations
-- 🔒 TypeScript by default
-- 🎉 TailwindCSS for styling
-- 📖 [React Router docs](https://reactrouter.com/)
+## Estructura del Proyecto
 
-## Getting Started
+La estructura del proyecto está organizada de la siguiente manera:
+├── src/ │ ├── components/ │ │ ├── Coin/ │ │ │ ├── CoinCard.tsx │ │ │ ├── InfoButton.tsx │ │ │ ├── NoResults.tsx │ │ │ ├── SearchBar.tsx │ │ ├── contact/ │ │ │ ├── contactform.tsx │ │ │ ├── contactinfo.tsx │ │ │ ├── contactpage.tsx │ │ │ ├── formfield.tsx │ │ │ ├── formfields.tsx │ │ ├── ui/ │ │ │ ├── Footer/ │ │ │ │ ├── Footer.tsx │ │ │ │ ├── InfoItem.tsx │ │ │ ├── Header/ │ │ │ │ ├── Header.tsx │ │ │ │ ├── NavItem.tsx │ │ │ │ ├── Navbar.tsx │ │ │ ├── Pagination/ │ │ │ │ ├── Pagination.tsx │ ├── routes/ │ │ ├── about.tsx │ │ ├── home.tsx │ │ ├── noticias.tsx │ ├── types/ │ │ ├── Coin.ts │ ├── root.tsx │ ├── app.css │ ├── index.tsx
 
-### Installation
 
-Install the dependencies:
+## Niveles de Anidamiento
 
-```bash
-npm install
-```
+### Página de Inicio (`home.tsx`)
 
-### Development
+1. **Home Component**: Componente principal que contiene la lógica de búsqueda, paginación y renderizado de las tarjetas de criptomonedas.
+   - **SearchBar Component**: Barra de búsqueda para filtrar criptomonedas.
+   - **CoinCard Component**: Tarjeta que muestra la información de cada criptomoneda.
+     - **InfoButton Component**: Botón que redirige a la página de Binance para obtener más información.
+   - **NoResults Component**: Mensaje que se muestra cuando no se encuentran resultados de búsqueda.
+   - **Pagination Component**: Componente de paginación para navegar entre las páginas de resultados.
 
-Start the development server with HMR:
+### Página de Contacto (`contactpage.tsx`)
 
-```bash
-npm run dev
-```
+1. **ContactPage Component**: Componente principal que contiene el formulario de contacto y la información de contacto.
+   - **ContactForm Component**: Formulario de contacto para enviar consultas.
+     - **FormFields Component**: Contiene los campos del formulario.
+       - **FormField Component**: Representa un solo campo del formulario.
+   - **ContactInfo Component**: Muestra la información de contacto y el mapa de ubicación.
 
-Your application will be available at `http://localhost:5173`.
+### Otros Componentes
 
-## Building for Production
+- **Header Component**: Encabezado de la aplicación que incluye la barra de navegación.
+  - **Navbar Component**: Barra de navegación con enlaces a diferentes páginas.
+    - **NavItem Component**: Representa un solo elemento de navegación.
+- **Footer Component**: Pie de página de la aplicación que incluye enlaces a políticas y redes sociales.
+  - **InfoItem Component**: Representa un solo enlace de información en el pie de página.
 
-Create a production build:
+## Estilos
 
-```bash
-npm run build
-```
-
-## Deployment
-
-### Docker Deployment
-
-This template includes three Dockerfiles optimized for different package managers:
-
-- `Dockerfile` - for npm
-- `Dockerfile.pnpm` - for pnpm
-- `Dockerfile.bun` - for bun
-
-To build and run using Docker:
-
-```bash
-# For npm
-docker build -t my-app .
-
-# For pnpm
-docker build -f Dockerfile.pnpm -t my-app .
-
-# For bun
-docker build -f Dockerfile.bun -t my-app .
-
-# Run the container
-docker run -p 3000:3000 my-app
-```
-
-The containerized application can be deployed to any platform that supports Docker, including:
-
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
-
-### DIY Deployment
-
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
+La aplicación utiliza Tailwind CSS para el diseño y la estilización, proporcionando una experiencia de usuario moderna y responsiva.
 
 ---
 
