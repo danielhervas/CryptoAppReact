@@ -4,7 +4,7 @@ import FormFields from './formfields';
 const ContactForm: React.FC = () => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Lógica de envío del formulario
+    
   };
 
   return (

@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 
-// Definir la interfaz NewsData
 export interface NewsData {
     TYPE: string;
     ID: number;
@@ -17,17 +16,16 @@ export interface NewsData {
     CATEGORY_DATA: { ID: number; NAME: string; CATEGORY: string }[];
 }
 
-// Función para limitar el texto a 30 palabras
 const limitText = (text: string, wordLimit: number) => {
     const words = text.split(" ");
     return words.length > wordLimit ? words.slice(0, wordLimit).join(" ") + "..." : text;
 };
 
-// Componente NewsCard que obtiene y muestra las noticias
-const NewsCard = () => {
-    const [newsData, setNewsData] = useState<NewsData[]>([]); // Estado para almacenar las noticias
 
-    // Función para obtener las noticias
+const NewsCard = () => {
+    const [newsData, setNewsData] = useState<NewsData[]>([]);
+
+
     const fetchNews = async () => {
         try {
             const response = await axios.get(
@@ -49,7 +47,7 @@ const NewsCard = () => {
         }
     };
 
-    // Llamar a fetchNews cuando se monte el componente
+
     useEffect(() => {
         fetchNews();
     }, []);
@@ -60,11 +58,11 @@ const NewsCard = () => {
                 newsData.map((news) => (
                     <div
                         key={news.ID}
-                        className="flex flex-col bg-white border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full"
+                        className="flex flex-col bg-white border border-gray-300 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 h-full hover:border-2 hover:border-green-500"
                     >
-                        <div className="card-body p-4 flex flex-col flex-grow">
-                            <h5 className="card-title text-xl font-semibold text-green-600">{news.TITLE}</h5>
-                            {/* Limitar el BODY a 30 palabras */}
+                        <div className="card-body p-4 flex flex-col flex-grow ">
+                            <h5 className="card-title text-xl font-semibold text-black text-bold ">{news.TITLE}</h5>
+
                             <p className="card-text mt-4 text-gray-700 flex-grow">{limitText(news.BODY, 30)}</p>
                         </div>
 
@@ -73,9 +71,15 @@ const NewsCard = () => {
                         )}
 
                         <div className="card-footer bg-gray-100 p-3 text-center rounded-b-lg mt-auto">
-                            <a href={news.URL} className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">
+                            <a
+                                href={news.URL}
+                                className="inline-block px-4 py-2 text-white bg-blue-600 rounded-lg border-2 border-transparent transition-all duration-300 hover:border-red-500 hover:bg-blue-700"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
                                 Leer más
                             </a>
+
                             <small className="text-muted text-xs block mt-2">
                                 Fecha de publicación: {new Date(news.PUBLISHED_ON * 1000).toLocaleDateString()}
                             </small>

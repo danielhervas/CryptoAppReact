@@ -23,13 +23,7 @@ function Footer() {
           </ul>
         </nav>
 
-        {/* 
-          <div className="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4">
-          <InfoItem name="Política de Privacidad" href="#" />
-          <InfoItem name="Política de Cookies" href="#" />
-          <InfoItem name="Términos y Condiciones" href="#" />
-        </div>
-         */}
+      
 
         <div className="flex space-x-4 mb-4 sm:mb-0 pe-5 ps-5">
           <a href="#" aria-label="Facebook" className="text-white hover:text-gray-400">

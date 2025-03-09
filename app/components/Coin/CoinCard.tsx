@@ -1,6 +1,6 @@
 import React from 'react';
 import type { Coin as CoinType } from '../../types';
-import BinanceButton from './InfoButton';  // Importa el nuevo componente
+import BinanceButton from './InfoButton'; 
 
 interface CoinCardProps {
   coin: CoinType;
@@ -8,9 +8,9 @@ interface CoinCardProps {
 
 export default function CoinCard({ coin }: CoinCardProps) {
   return (
-    <div className="container mx-auto my-1 ps-5 pe-5"> {/* Ajuste de margen vertical */}
+    <div className="container mx-auto my-1 ps-5 pe-5"> 
       <div className="w-full flex flex-col sm:flex-row items-center border border-gray-300 rounded-xl p-4 shadow-md bg-white">
-        {/* Imagen alineada a la izquierda */}
+       
         <div className="flex items-center ps-5 mb-4 sm:mb-0 sm:mr-6">
           <img
             src={coin.image_url}
@@ -19,7 +19,7 @@ export default function CoinCard({ coin }: CoinCardProps) {
           />
         </div>
 
-        {/* Información distribuida en una fila */}
+        
         <div className="flex-1 flex flex-row justify-between items-center">
           <div className="flex-1 mb-2 sm:mb-0 text-center sm:text-left">
             <h3 className="text-lg font-semibold truncate">{coin.name} ({coin.symbol})</h3>
@@ -31,7 +31,7 @@ export default function CoinCard({ coin }: CoinCardProps) {
             </p>
           </div>
           <div className="flex-1 text-center sm:text-right pe-5">
-            <BinanceButton symbol={coin.symbol} />  {/* Usamos el componente aquí */}
+            <BinanceButton symbol={coin.symbol} />  
           </div>
         </div>
       </div>

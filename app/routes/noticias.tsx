@@ -1,6 +1,6 @@
 import Header from "app/components/ui/Header/Header";
 import Footer from "app/components/ui/Footer/Footer";
-import NewsCard from "~/components/Coin/NewsCard";
+import NewsCard from "~/components/News/NewsCard";
 const Noticias = () => {
   return (
     <div className="container mx-auto p-4">
