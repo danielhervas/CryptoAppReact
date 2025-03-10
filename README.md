@@ -81,5 +81,5 @@ La estructura del proyecto está organizada de la siguiente manera:
 La aplicación utiliza Tailwind CSS para el diseño y la estilización, proporcionando una experiencia de usuario moderna y responsiva.
 
 ---
-
+(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fdiscover%2Famador-rivas-se%25C3%25B1or-salda%25C3%25B1a&psig=AOvVaw1_hbthLwKtJuorEsFndgnm&ust=1741684038984000&source=images&cd=vfe&opi=89978449&ved=0CBYQjRxqFwoTCMiuk-iU_4sDFQAAAAAdAAAAABAE)
 Hecho co ❤️ por el equipo A.
