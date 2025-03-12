@@ -48,7 +48,7 @@ La estructura del proyecto está organizada de la siguiente manera:
 │   ├── root.tsx
 │   ├── app.css
 │   ├── index.tsx
-
+```
 ## Niveles de Anidamiento
 
 ### Página de Inicio (`home.tsx`)
