@@ -82,4 +82,4 @@ La aplicación utiliza Tailwind CSS para el diseño y la estilización, proporci
 
 ---
 
-Hecho co ❤️ por el equipo A.
+Hecho por Daniel Hervás, Angel Martín e Ignacio Ramos.
